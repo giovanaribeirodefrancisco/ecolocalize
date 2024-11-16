@@ -1,8 +1,8 @@
 .background-container {
   background: linear-gradient(to bottom, #104108, #D1FFC0);
-  height: 100vh; /* Usa 100vh para cobrir toda a altura da viewport */
-  display: flex;
-
+  min-height: 100vh; /* Usa 100vh para cobrir toda a altura da viewport */
+  //display: flex;
+  position: relative;
 }
 
 .banner-img {
