@@ -1,0 +1,76 @@
+.background-container {
+  background: linear-gradient(to bottom, #104108, #D1FFC0);
+  height: 100vh; /* Usa 100vh para cobrir toda a altura da viewport */
+  display: flex;
+
+}
+
+.banner-img {
+  width: 50%;
+  object-fit: cover;
+  display: block;
+}
+
+.titulo{
+  color: white;
+  font-size: 50px;
+  margin-left: 30px;
+  font-family:  Inter, sans-serif;
+}
+
+.texto{
+  color: white;
+  font-size: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.contatos{
+  padding: 20px;
+  background-color: #D1FFC0; /* Fundo escuro */
+  color: #083108;
+  font-family: Inter, sans-serif;
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+  margin-top: 135px;
+
+}
+
+.ctttxt{
+  font-size: 45px;
+}
+
+.email-container {
+  display: flex;
+  align-items: center; /* Alinha o ícone e o texto verticalmente no centro */
+  font-size: 30px;
+
+}
+
+.icon {
+  width: 50px; /* Ajuste o tamanho do ícone conforme necessário */
+  height: 50px;
+  margin-right: 8px; /* Espaçamento entre o ícone e o email */
+}
+
+.email-container p {
+  margin: 0; /* Remove o espaçamento padrão do parágrafo para melhor alinhamento */
+}
+
+.tel-container {
+  display: flex;
+  align-items: center; /* Alinha o ícone e o texto verticalmente no centro */
+  font-size: 30px;
+
+}
+
+.icon-tel {
+  width: 50px; /* Ajuste o tamanho do ícone conforme necessário */
+  height: 50px;
+  margin-right: 8px; /* Espaçamento entre o ícone e o email */
+}
+
+.tel-container p {
+  margin: 0; /* Remove o espaçamento padrão do parágrafo para melhor alinhamento */
+}

@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+/* Adiciona um estilo para quando o link está ativo */
+a.active {
+  color: #ffffff; /* Cor do texto */
+  background-color: #032008; /* Cor de fundo */
+  border-radius: 5px; /* Bordas arredondadas */
+}

@@ -1,0 +1,41 @@
+.background-container {
+  background: linear-gradient(to bottom, #104108, #13400c, #D1FFC0);
+  min-height: 100vh;
+  position: relative;
+  flex-direction: column; /* Coloca o título no topo e o restante abaixo */
+  padding: 20px;
+}
+
+.titulo {
+  color: white;
+  font-size: 70px;
+  font-family: Inter, sans-serif;
+  margin: 0 0 20px 40px; /* Adiciona espaço abaixo do título */
+}
+
+.conteudo {
+  display: flex;
+  flex-direction: row; /* Coloca o texto e a imagem lado a lado */
+  align-items: flex-start; /* Alinha pelo topo */
+  justify-content: space-between; /* Espaça os elementos horizontalmente */
+  padding: 0 40px;
+}
+
+.texto {
+  color: white;
+  font-size: 30px;
+  font-family: Inter, sans-serif;
+  margin-right: 20px;
+}
+
+.texto ul {
+  list-style-type: disc; /* Adiciona marcadores ao texto */
+  margin-left: 20px;
+  line-height: 1.6; /* Melhora o espaçamento entre os itens */
+}
+
+.banner-img {
+  height: 500px;
+  max-width: 50%; /* Garante que a imagem não ultrapasse 50% do espaço disponível */
+  object-fit: contain;
+}

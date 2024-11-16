@@ -1,0 +1,29 @@
+.banner-img {
+  width: 100%;
+  height: 280px; /* Defina a altura fixa, se desejar */
+  object-fit: cover; /* Ajusta a imagem para cobrir o espaço definido */
+  display: block;
+}
+
+.intro {
+  display: flex;               /* Usando Flexbox para centralizar */
+  flex-direction: column;      /* Faz os <h2> ficarem empilhados verticalmente */
+  justify-content: center;     /* Centraliza verticalmente */
+  align-items: center;         /* Centraliza horizontalmente */
+  height: 50vh;               /* Faz a div ocupar 100% da altura da tela */
+  font-family: Inter, sans-serif;
+  font-size: 50px;
+  font-style: italic;
+  background: linear-gradient(to bottom, #104108, #D1FFC0);
+  color: white;
+}
+
+.intro2 {
+  font-size: 50px;
+  font-family: Inter, sans-serif;
+  font-style: italic;
+  color: white;
+}
+
+
+

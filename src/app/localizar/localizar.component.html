@@ -1,0 +1,43 @@
+<div class="background-container">
+  <img src="assets/imagem/imagemmapa.png" alt="Imagem abaixo do navbar" class="banner-img">
+
+  <div class="content-container">
+    <form class="forms" [formGroup]="cepForm" (ngSubmit)="buscarPontos()">
+      <div class="input-container">
+        <input type="text" formControlName="cep" placeholder="Digite o seu CEP aqui..." class="form-control" />
+        <i class="bi bi-search"></i>
+        <br>
+        <button type="submit" class="button" [disabled]="cepForm.invalid">Buscar Pontos</button>
+        <div *ngIf="cepForm.controls['cep'].invalid && cepForm.controls['cep'].touched" class="alert alert-danger mt-2">
+          CEP inválido. Por favor, insira um CEP válido!
+        </div>
+
+        <div *ngIf="pontosProximos.length > 0" class="pontos-lista">
+          <h3>Pontos de Coleta Mais Próximos:</h3>
+          <ul>
+            <li *ngFor="let ponto of pontosProximos">
+              <strong>{{ ponto.nome }}</strong><br>
+              <b>Endereço:</b> {{ ponto.endereco }}<br>
+              <b>Tipos de Lixo Aceitos:</b> {{ ponto.tiposLixoAceitos }}
+              <hr>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </form>
+
+
+    <div class="descartar-lixo">
+      <h3>Como descartar cada lixo?</h3>
+      <div class="lixo-itens">
+        <a routerLink="/localizar/notebooks" routerLinkActive="active" class="active" (click)="navigateToNotebooks()">Notebooks</a>
+        <a routerLink="/localizar/pilhas" routerLinkActive="active" class="active" (click)="navigateToPilhas()">Pilhas</a>
+        <a routerLink="/localizar/impressoras" routerLinkActive="active" class="active" (click)="navigateToImpressoras()">Impressoras</a>
+        <a routerLink="/localizar/baterias" routerLinkActive="active" class="active" (click)="navigateToBaterias()">Baterias</a>
+        <a routerLink="/localizar/lampadas" routerLinkActive="active" class="active" (click)="navigateToLampadas()">Lâmpadas LED</a>
+        <a routerLink="/localizar/celulares" routerLinkActive="active" class="active" (click)="navigateToCelulares()">Celulares</a>
+      </div>
+    </div>
+  </div>
+</div>
